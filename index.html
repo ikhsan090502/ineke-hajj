@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haji Adalah Panggilan Istimewa dari Allah</title>
+  <meta name="description" content="Ibadah haji bukan sekadar perjalanan menuju Tanah Suci, tetapi juga menjadi panggilan istimewa dari Allah untuk hamba-hamba pilihan-Nya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:       #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-pale:  #f5ead0;
+      --green-deep: #1a3a2e;
+      --green-mid:  #2d5a45;
+      --cream:      #faf7f0;
+      --ink:        #1e1a14;
+      --ink-soft:   #4a4336;
+      --border:     #e0d4b0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Lora', Georgia, serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* ── ORNAMENTAL HEADER ── */
+    header {
+      background: var(--green-deep);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 120% 80% at 50% 0%, rgba(201,168,76,.18) 0%, transparent 70%),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 39px,
+          rgba(201,168,76,.07) 39px,
+          rgba(201,168,76,.07) 40px
+        ),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 39px,
+          rgba(201,168,76,.07) 39px,
+          rgba(201,168,76,.07) 40px
+        );
+      pointer-events: none;
+    }
+
+    .header-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+
+    .arabesque {
+      font-size: 28px;
+      color: var(--gold);
+      letter-spacing: 8px;
+      margin-bottom: 20px;
+      opacity: .85;
+    }
+
+    .basmala {
+      font-family: 'Amiri', serif;
+      font-size: clamp(22px, 5vw, 34px);
+      color: var(--gold-light);
+      direction: rtl;
+      unicode-bidi: embed;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .divider-gold {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+    .divider-gold span {
+      height: 1px;
+      width: 80px;
+      background: linear-gradient(90deg, transparent, var(--gold));
+    }
+    .divider-gold span:last-child {
+      background: linear-gradient(90deg, var(--gold), transparent);
+    }
+    .divider-gold i { color: var(--gold); font-style: normal; font-size: 18px; }
+
+    .tag-category {
+      display: inline-block;
+      font-family: 'Lora', serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,.4);
+      padding: 5px 16px;
+      margin-bottom: 22px;
+    }
+
+    h1.headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 5.5vw, 46px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      margin-bottom: 24px;
+    }
+
+    .meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-family: 'Lora', serif;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.55);
+    }
+    .meta-bar strong { color: var(--gold-light); font-weight: 500; }
+    .meta-dot { color: var(--gold); }
+
+    /* ── HERO IMAGE ── */
+    .hero-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      transform: translateY(-32px);
+    }
+
+    .hero-img-box {
+      position: relative;
+      border: 3px solid var(--gold);
+      box-shadow: 0 24px 60px rgba(26,58,46,.22), 0 0 0 8px rgba(201,168,76,.08);
+    }
+
+    .hero-img-box img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: cover;
+    }
+
+    .hero-caption {
+      background: var(--green-deep);
+      padding: 10px 20px;
+      font-size: 11.5px;
+      color: var(--gold-light);
+      letter-spacing: 1px;
+      text-align: center;
+      font-family: 'Lora', serif;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-wrap {
+      max-width: 720px;
+      margin: 0 auto 0;
+      padding: 0 24px 60px;
+    }
+
+    .article-body p {
+      font-size: clamp(16px, 2vw, 18px);
+      margin-bottom: 1.6em;
+      color: var(--ink);
+      text-align: justify;
+    }
+
+    .article-body p:first-child::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+      font-weight: 700;
+      float: left;
+      line-height: .78;
+      margin: 6px 12px 0 0;
+      color: var(--green-deep);
+    }
+
+    .article-body p:first-child {
+      font-size: clamp(17px, 2.2vw, 20px);
+      font-style: italic;
+      color: var(--ink-soft);
+    }
+
+    .source-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+    .source-line a {
+      color: var(--green-mid);
+      word-break: break-all;
+    }
+    .source-line::before {
+      content: '◈';
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* ── ORNAMENTAL SECTION BREAK ── */
+    .section-ornament {
+      text-align: center;
+      margin: 48px 0 40px;
+      color: var(--gold);
+      font-size: 22px;
+      letter-spacing: 12px;
+    }
+
+    /* ── WHATSAPP FLOATING BUTTON ── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .wa-tooltip {
+      background: var(--green-deep);
+      color: #fff;
+      font-family: 'Lora', serif;
+      font-size: 13px;
+      padding: 8px 16px;
+      border-radius: 40px;
+      border: 1px solid var(--gold);
+      white-space: nowrap;
+      box-shadow: 0 4px 20px rgba(0,0,0,.2);
+      opacity: 0;
+      transform: translateX(8px);
+      transition: opacity .3s ease, transform .3s ease;
+      pointer-events: none;
+    }
+
+    .wa-float:hover .wa-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .wa-btn {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25d366 0%, #128c4e 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(18,140,78,.4), 0 0 0 0 rgba(37,211,102,.5);
+      animation: wa-pulse 2.4s ease-in-out infinite;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .wa-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 32px rgba(18,140,78,.5), 0 0 0 0 transparent;
+      animation: none;
+    }
+
+    .wa-btn svg { width: 32px; height: 32px; fill: #fff; }
+
+    @keyframes wa-pulse {
+      0%   { box-shadow: 0 6px 24px rgba(18,140,78,.4), 0 0 0 0 rgba(37,211,102,.5); }
+      70%  { box-shadow: 0 6px 24px rgba(18,140,78,.4), 0 0 0 16px rgba(37,211,102,0); }
+      100% { box-shadow: 0 6px 24px rgba(18,140,78,.4), 0 0 0 0 rgba(37,211,102,0); }
+    }
+
+    /* ── INLINE CTA BANNER ── */
+    .wa-cta-banner {
+      background: linear-gradient(135deg, #1f4a38 0%, #2d6b50 100%);
+      border: 1px solid rgba(201,168,76,.5);
+      border-radius: 2px;
+      padding: 32px 36px;
+      margin: 56px 0 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wa-cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(201,168,76,.15) 0%, transparent 60%);
+    }
+
+    .wa-cta-banner p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(17px, 3vw, 22px);
+      color: #f5c842;
+      margin-bottom: 20px !important;
+      position: relative;
+      text-align: center !important;
+      font-style: normal !important;
+      font-weight: 700;
+      text-shadow: 0 1px 10px rgba(0,0,0,.9);
+      letter-spacing: .01em;
+    }
+
+    .wa-cta-banner p::first-letter { all: unset; }
+
+    .wa-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Lora', serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 13px 32px;
+      border-radius: 2px;
+      position: relative;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .wa-cta-btn:hover {
+      background: #1ebc5a;
+      transform: translateY(-2px);
+    }
+
+    .wa-cta-btn svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--green-deep);
+      padding: 32px 24px;
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-size: 12.5px;
+      color: rgba(255,255,255,.45);
+      letter-spacing: .5px;
+    }
+    footer .gold-mark { color: var(--gold); }
+
+    /* ── FADE-IN ANIMATION ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeUp .8s ease forwards;
+    }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .delay-1 { animation-delay: .15s; }
+    .delay-2 { animation-delay: .3s; }
+    .delay-3 { animation-delay: .45s; }
+    .delay-4 { animation-delay: .6s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .article-body p:first-child::first-letter { font-size: 54px; }
+      .wa-float { bottom: 20px; right: 18px; }
+      .wa-btn { width: 54px; height: 54px; }
+      .wa-cta-banner { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <div class="arabesque fade-in">✦ ✦ ✦</div>
+      <div class="basmala fade-in delay-1">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+      <div class="divider-gold fade-in delay-2">
+        <span></span><i>☽</i><span></span>
+      </div>
+      <div class="tag-category fade-in delay-2">Inspirasi Ibadah</div>
+      <h1 class="headline fade-in delay-3">Haji Adalah Panggilan<br/>Istimewa dari Allah</h1>
+      <div class="meta-bar fade-in delay-4">
+        <span>15 Mei 2026</span>
+        <span class="meta-dot">◆</span>
+        <span>By <strong>Tanur Muthmainnah Tour</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="hero-wrap fade-in">
+    <div class="hero-img-box">
+      <img
+        src="./haji-hero.png"
+        alt="Haji Adalah Panggilan Istimewa dari Allah"
+        loading="eager"
+      />
+      <div class="hero-caption">Baitullah — Ka'bah, Masjidil Haram, Makkah Al-Mukarramah</div>
+    </div>
+  </div>
+
+  <!-- ── ARTICLE ── -->
+  <main class="article-wrap">
+    <div class="section-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+    <article class="article-body fade-in">
+
+      <p>
+        Ibadah haji bukan sekadar perjalanan menuju Tanah Suci, tetapi juga menjadi panggilan
+        istimewa dari Allah untuk hamba-hamba pilihan-Nya. Tidak semua orang yang memiliki
+        harta, kesehatan, dan kesempatan bisa menunaikan haji. Karena itu, banyak ulama menyebut
+        bahwa haji adalah undangan langsung dari Allah kepada siapa saja yang dikehendaki-Nya.
+        Dalam Al-Qur'an, perintah haji bahkan diawali dengan penyebutan nama Allah, yang
+        menunjukkan kemuliaan dan keistimewaan ibadah ini.
+      </p>
+
+      <p>
+        Keistimewaan haji juga terletak pada niat dan ketulusan hati orang yang
+        menjalankannya. Para jamaah diingatkan agar tidak menjadikan haji sebagai ajang
+        pencitraan, wisata, atau mencari gelar semata. Sebab inti dari ibadah haji adalah
+        mendekatkan diri kepada Allah dengan penuh keikhlasan. Semua identitas dunia dilepaskan
+        ketika mengenakan kain ihram, menandakan bahwa seluruh manusia sama di hadapan Allah.
+      </p>
+
+      <p>
+        Selain perjalanan fisik, haji juga merupakan perjalanan spiritual yang menguji
+        kesabaran, keikhlasan, dan ketakwaan seseorang. Setiap rangkaian ibadah yang dijalani
+        menjadi sarana untuk memperbaiki diri dan memperkuat iman. Banyak jamaah yang merasakan
+        perubahan besar setelah pulang dari haji karena ibadah ini mengajarkan kepasrahan total
+        kepada Allah serta pentingnya menjaga akhlak dan hati yang bersih.
+      </p>
+
+      <p>
+        Menariknya, banyak kisah menunjukkan bahwa panggilan haji datang dengan cara yang
+        tidak terduga. Ada orang yang secara ekonomi tampak belum mampu, tetapi Allah bukakan
+        jalan sehingga akhirnya bisa berangkat ke Baitullah. Sebaliknya, ada pula yang memiliki
+        kekayaan melimpah namun belum mendapat kesempatan berhaji. Hal ini menunjukkan bahwa
+        haji bukan hanya soal materi, tetapi juga soal kehendak dan izin dari Allah سبحانه وتعالى.
+      </p>
+
+      <p>
+        Karena itu, umat Islam diajak untuk mempersiapkan diri bukan hanya dari sisi biaya,
+        tetapi juga iman, takwa, dan niat yang lurus. Haji yang mabrur lahir dari hati yang
+        ikhlas serta kesungguhan dalam beribadah. Semoga siapa pun yang memiliki kerinduan ke
+        Tanah Suci diberi kemudahan oleh Allah untuk memenuhi panggilan istimewa tersebut dan
+        kembali menjadi pribadi yang lebih baik.
+      </p>
+
+      <!-- WhatsApp CTA Banner -->
+      <div class="wa-cta-banner">
+        <p>Ingin mengetahui lebih lanjut seputar ibadah Haji &amp; Umrah? Hubungi kami sekarang.</p>
+        <a
+          class="wa-cta-btn"
+          href="https://wa.me/628132900882?text=Assalamualaikum%2C%20saya%20ingin%20bertanya%20seputar%20ibadah%20Haji%20dan%20Umrah."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Hubungi via WhatsApp
+        </a>
+      </div>
+
+      <div class="source-line">
+        Sumber:&nbsp;
+        <a href="https://nu.or.id/daerah/haji-adalah-panggilan-istimewa-dari-allah-mengapa" target="_blank" rel="noopener noreferrer">
+          nu.or.id — Haji Adalah Panggilan Istimewa dari Allah, Mengapa?
+        </a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- ── FLOATING WHATSAPP BUTTON ── -->
+  <div class="wa-float">
+    <div class="wa-tooltip">💬 Tanya seputar Haji & Umrah</div>
+    <a
+      class="wa-btn"
+      href="https://wa.me/628132900882?text=Assalamualaikum%2C%20saya%20ingin%20bertanya%20seputar%20ibadah%20Haji%20dan%20Umrah."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Hubungi via WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="divider-gold" style="margin-bottom:16px;">
+      <span style="width:40px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.4));height:1px;display:inline-block;"></span>
+      <span style="color:var(--gold);font-size:14px;">✦</span>
+      <span style="width:40px;background:linear-gradient(90deg,rgba(201,168,76,.4),transparent);height:1px;display:inline-block;"></span>
+    </div>
+    <p>
+      © 2026 <span class="gold-mark">Tanur Muthmainnah Tour</span> — Berita &amp; Inspirasi Ibadah
+    </p>
+  </footer>
+
+</body>
+</html>
